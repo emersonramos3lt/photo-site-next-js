@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #F2DFDF;
+  --secondaryColor: #D93814;
+}
+
+body {
+  background-color: var(--background);
+}
+
+.img-container {
+  background: url("/background-home.jpg");
+  background-size: cover;
+  mix-blend-mode: darken;
+}
+
+/* GRID AREA */
+.item-1 { grid-area: item-1;}
+.item-2 { grid-area: item-2;}
+.item-3 { grid-area: item-3;}
+.item-4 { grid-area: item-4;}
+
+.grid-area {
+  max-width: 1200px;
+  margin: auto;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-areas: 
+  "item-1 item-3"
+  "item-2 item-3"
+  "item-4 item-3";
+
+  gap: 1rem;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 700px) {
+  section {
+    max-width: 90%;
+    margin: auto;
+  }
+
+  .home-grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .home-grid h1 {
+    font-size: 2.5rem;
+  }
+
+  .img-container {
+    width: 100%;
+    height: 500px;
+    margin-top: 7rem;
+    background-position: center;
+  } /* 
+  O uso do height é necessário 
+  senão a imagem não irá aparecer, 
+  quando a @media ativar
+  */
+
+  .grid-area {
+    display: flex;
+    flex-flow: column wrap;
+  }
+}
