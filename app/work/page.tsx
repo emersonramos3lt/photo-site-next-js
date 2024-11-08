@@ -34,7 +34,7 @@ const page = () => {
           </div>
 
           <div className="item-2 p-8">
-            <Image src="/img2.jpg" alt='Image 1' aria-labelledby='caption-2'
+            <Image src="/img2.jpg" alt='Image 2' aria-labelledby='caption-2'
             width={500} height={500}/>
             <h2 id='caption-2' className='font-medium p-2'>A bicycle on a pink background.</h2>
          </div>
@@ -42,7 +42,7 @@ const page = () => {
 
          
           <div className="item-3 p-8">
-            <Image src="/img3.jpg" alt='Image 1' aria-labelledby='caption-3'
+            <Image src="/img3.jpg" alt='Image 3' aria-labelledby='caption-3'
             width={800} height={800}/>
             <h2 id='caption-3' className='font-medium p-2'>A photo of the building.</h2>
          </div>
@@ -50,7 +50,7 @@ const page = () => {
 
         
           <div className="item-4 p-8">
-            <Image src="/img4.jpg" alt='Image 1' aria-labelledby='caption-4'
+            <Image src="/img4.jpg" alt='Image 4' aria-labelledby='caption-4'
             width={500} height={500}/>
             <h2 id='caption-4' className='font-medium p-2'>Photo of the CN Tower in Canada.</h2>
          </div>
